@@ -22,7 +22,7 @@ function shuffleArray(array: any[]) {
     return newArray;
 }
 
-function MemoryGame({ rows, cols }: Props) {
+function MemoryGame({ rows = 4, cols = 4 }: Props) {
 
     const letters = useMemo(() =>
         // Si i es igual a 0, entonces String.fromCharCode(65 + i) devuelve la letra "A" (número ASCII).
